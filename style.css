@@ -12,7 +12,7 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-left: 120px;
-  margin-top: 69px;
+  margin-top: 50px;
   margin-right: 120px;
 }
 .products-title {
@@ -36,11 +36,14 @@ header {
 /* header part End */
 
 /* front heading part start */
+.front-page {
+  display: flex;
+}
 .container {
   width: 582px;
   height: 270px;
   margin-left: 120px;
-  margin-top: 78px;
+  margin-top: 40px;
 }
 .heading {
   width: 582px;
@@ -49,6 +52,7 @@ header {
 }
 .heading h1 {
   font-size: 52px;
+  margin-bottom: 0;
 }
 .heading p {
   font-size: 16px;
@@ -61,6 +65,7 @@ header {
 .button-hover {
   width: 196px;
   height: 44px;
+  margin-top: 20px;
   border: none;
   color: white;
   background-color: yellowgreen;
@@ -72,4 +77,10 @@ header {
 }
 .button-hover:hover {
   box-shadow: inset 196px 0 0 0 #e02c6d;
+}
+.front-image {
+  background-image: url(images/background.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: bottom;
 }
