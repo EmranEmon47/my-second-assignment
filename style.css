@@ -8,7 +8,7 @@ body {
 }
 
 /* header part start */
-header {
+.navigation-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,6 +42,9 @@ header {
   height: 500px;
 }
 .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 582px;
   height: 270px;
   margin-left: 120px;
@@ -204,7 +207,7 @@ textarea {
 input[type="submit"] {
   background-color: yellowgreen;
   color: white;
-  padding: 12px 229px;
+  padding: 12px 170px;
   border: none;
   border-radius: 4px;
   box-shadow: inset 0 0 0 0 #e02c6d;
@@ -239,4 +242,152 @@ footer p {
   width: 32px;
   height: 32px;
 }
+.feedback {
+  text-align: center;
+}
+.input-information {
+  width: 50%;
+  margin: auto;
+}
+.input-information input {
+  text-align: center;
+}
+.input-information label {
+  width: 80%;
+  text-align: start;
+}
 /* footer End  */
+
+/* ------------------------- 
+Media Queries ---------------------------------------*/
+
+/* mobile devices */
+@media only screen and (max-width: 688px) {
+  .front-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .heading h1 {
+    font-size: 20px;
+  }
+  .front-image img {
+    width: 80%;
+  }
+  .products-collection {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin-left: 80px;
+  }
+  .gears {
+    align-items: center;
+    justify-content: center;
+    border: 2px solid lightgrey;
+    border-radius: 2px;
+  }
+  .thumbnail-1 {
+    text-align: center;
+    margin-top: 17px;
+  }
+  .gear-details {
+    text-align: center;
+    margin-left: 0px;
+  }
+  .product h3 {
+    font-size: 20px;
+    color: #18191f;
+    font-weight: 550;
+    margin-top: 6px;
+    margin-bottom: 1px;
+  }
+  .filled-colour {
+    color: #fb8200;
+    font-size: 12px;
+  }
+  .product span {
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+  .gear-rating-1 {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  p {
+    font-size: 14px;
+    color: #787885;
+    font-weight: 700;
+    margin-top: 0;
+  }
+  .feedback {
+    text-align: center;
+  }
+  .input-information {
+    width: 80%;
+  }
+  .input-information input {
+    text-align: center;
+  }
+  .input-information label {
+    width: 80%;
+    text-align: start;
+  }
+}
+
+@media (min-width: 792px) {
+  .products-collection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin: auto;
+  }
+  .gears {
+    align-items: center;
+    justify-content: center;
+    border: 2px solid lightgrey;
+    border-radius: 2px;
+  }
+  .thumbnail-1 {
+    text-align: center;
+    margin-top: 17px;
+  }
+  .gear-details {
+    text-align: center;
+    margin-left: 0px;
+  }
+  .product h3 {
+    font-size: 20px;
+    color: #18191f;
+    font-weight: 550;
+    margin-top: 6px;
+    margin-bottom: 1px;
+  }
+  .filled-colour {
+    color: #fb8200;
+    font-size: 12px;
+  }
+  .product span {
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+  .gear-rating-1 {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  p {
+    font-size: 14px;
+    color: #787885;
+    font-weight: 700;
+    margin-top: 0;
+  }
+}
