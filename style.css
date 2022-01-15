@@ -38,6 +38,7 @@ header {
 /* front heading part start */
 .front-page {
   display: flex;
+  height: 700px;
 }
 .container {
   width: 582px;
@@ -82,5 +83,76 @@ header {
   background-image: url(images/background.png);
   background-repeat: no-repeat;
   background-size: 50%;
-  background-position: bottom;
+  background-position: center 20%;
+}
+
+/* products collection style start  */
+
+.collection-type-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.collection-type-title h2 {
+  font-size: 28px;
+  color: #3a3a3a;
+}
+
+.products-collection {
+  width: 1047px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  margin-left: 170px;
+}
+.gear-1 {
+  width: 329px;
+  height: 438px;
+  border: 2px solid bisque;
+  border-radius: 2px;
+}
+.thumbnail-1 {
+  text-align: center;
+  margin-top: 17px;
+}
+.gear-details {
+  margin-left: 14px;
+}
+.product h3 {
+  font-size: 28px;
+  color: #18191f;
+  font-weight: 550;
+  margin-top: 6px;
+  margin-bottom: 1px;
+}
+.product span {
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+.gear-rating-1 {
+  margin-top: 5px;
+  font-size: 14px;
+}
+p {
+  font-size: 14px;
+  color: #787885;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+/* see more section */
+.next-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 145px;
+  margin-top: 40px;
+}
+.next-button a {
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  color: yellowgreen;
 }
