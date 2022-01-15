@@ -38,7 +38,7 @@ header {
 /* front heading part start */
 .front-page {
   display: flex;
-  height: 700px;
+  height: 500px;
 }
 .container {
   width: 582px;
@@ -66,6 +66,7 @@ header {
 .button-hover {
   width: 196px;
   height: 44px;
+  font-size: 20px;
   margin-top: 20px;
   border: none;
   color: white;
@@ -73,7 +74,7 @@ header {
   border-radius: 41px;
   box-shadow: inset 0 0 0 0 #e02c6d;
   transition: ease-out 0.3s;
-  font-size: 16px;
+
   outline: none;
 }
 .button-hover:hover {
@@ -89,8 +90,10 @@ header {
 /* products collection style start  */
 
 .collection-type-title {
+  display: flex;
   text-align: center;
   margin-bottom: 30px;
+  justify-content: center;
 }
 .collection-type-title h2 {
   font-size: 28px;
@@ -110,7 +113,7 @@ header {
 .gears {
   width: 329px;
   height: 438px;
-  border: 2px solid bisque;
+  border: 2px solid lightgrey;
   border-radius: 2px;
 }
 .thumbnail-1 {
@@ -159,3 +162,53 @@ p {
   color: yellowgreen;
 }
 /* see more button end*/
+
+/* contuct with us section start */
+.getting-info {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  flex-direction: column;
+}
+
+.git-touch-bar {
+  display: flex;
+  flex-direction: column;
+}
+.feedback {
+  margin-left: 50px;
+}
+.input-information {
+  width: 500px;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: yellowgreen;
+  color: white;
+  padding: 12px 229px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 0 #e02c6d;
+  transition: ease-out 0.3s;
+}
+input[type="submit"]:hover {
+  box-shadow: inset 500px 0 0 0 #e02c6d;
+}
+/* contuct with us section end */
+
+/* footer start  */
+
+/* footer End  */
