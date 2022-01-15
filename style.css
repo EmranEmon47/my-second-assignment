@@ -263,6 +263,63 @@ Media Queries ---------------------------------------*/
 
 /* mobile devices */
 @media only screen and (max-width: 688px) {
+  .navigation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 120px;
+    margin-top: 50px;
+    margin-right: 120px;
+  }
+  .products-title {
+    color: #3a3a3a;
+  }
+  .products-title h3 {
+    font-size: 24px;
+    color: #3a3a3a;
+    font-weight: 700;
+  }
+  .front-image {
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center 90%;
+  }
+  .navigation-bar a {
+    display: none;
+  }
+  .navigation-bar i {
+    display: none;
+  }
+  .navigation-bar .font-awesome {
+    margin-left: 34px;
+  }
+  .front-page {
+    width: 100%;
+    display: block;
+    height: 500px;
+  }
+  .container {
+    width: 100% !important;
+    text-align: center;
+  }
+  .heading {
+    width: 582px;
+    height: 270px;
+    color: #3a3a3a;
+  }
+  .heading h1 {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+  .heading p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .link-button a {
+    text-decoration: none;
+  }
   .front-page {
     display: flex;
     flex-direction: column;
@@ -271,9 +328,10 @@ Media Queries ---------------------------------------*/
     margin: auto;
   }
   .heading h1 {
-    font-size: 20px;
+    font-size: 30px;
   }
   .front-image img {
+    margin-top: 50px;
     width: 80%;
   }
   .products-collection {
@@ -338,16 +396,23 @@ Media Queries ---------------------------------------*/
     width: 80%;
     text-align: start;
   }
+  .collection-type-title {
+    display: flex;
+    text-align: center;
+    margin-bottom: 30px;
+    justify-content: center;
+    margin-top: 50px;
+  }
 }
 
-@media (min-width: 792px) {
+@media only screen and (min-width: 688px) and (max-width: 992px) {
   .products-collection {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
+    /* grid-column-gap: 10px;
+    grid-row-gap: 10px; */
     margin: auto;
   }
   .gears {
